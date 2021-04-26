@@ -5,6 +5,6 @@
     #define MRAA
 #endif
 
-#include "MRAA/RF24_arch_config.h"
+#include <MRAA/RF24_arch_config.h>
 
 #endif

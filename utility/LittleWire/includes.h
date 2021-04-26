@@ -23,8 +23,8 @@
 /**
  * Load the correct configuration for this platform
 */
-#include "LittleWire/RF24_arch_config.h"
+#include <LittleWire/RF24_arch_config.h>
 
 #endif
 
-/*@}*/	
+/*@}*/

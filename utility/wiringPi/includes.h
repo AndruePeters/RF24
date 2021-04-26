@@ -23,7 +23,7 @@
 /**
  * Load the correct configuration for this platform
  */
-#include "wiringPi/RF24_arch_config.h"
+#include <wiringPi/RF24_arch_config.h>
 
 #endif
 /*@}*/
