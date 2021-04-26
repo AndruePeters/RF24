@@ -55,8 +55,10 @@ endif()
 #####################################
 ### Now we actually build the library
 ######################################
-
-add_subdirectory(utility)
+include (cmake/copy_includes.cmake)
 # RF24.cpp is common for every library
 add_library(RF24 STATIC RF24.cpp)
+target_include_directories(RF24 PUBLIC utility/)
+add_subdirectory(utility)
+
 target_link_libraries(RF24 INTERFACE rf24DriverUtility project_options project_warnings)
